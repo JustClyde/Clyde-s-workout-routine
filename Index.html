@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clyde's Gym Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Clyde&#39;s Workout Routine</div>
+    <div class="sub">Gym Plan x 6 Days</div>
+    <div class="actions">
+      <button id="exportBtn" class="btn primary">Export Progress</button>
+      <button id="resetBtn" class="btn">Reset</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar" id="daysList"></aside>
+
+    <section class="content">
+      <div id="planTitle" class="plan-title"></div>
+      <div id="exList" class="ex-list"></div>
+
+      <div class="notes-area">
+        <label for="notes">Notes</label>
+        <textarea id="notes" placeholder="Weights, RPE, soreness, etc"></textarea>
+      </div>
+
+      <div class="footer-controls">
+        <button id="markAllBtn" class="btn primary">Mark All Done</button>
+        <button id="clearDayBtn" class="btn">Clear Day</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Created by Hlonela Clyde Madubela with ❤️ • Progress auto-saves locally • Uploaded to S3 for public access</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
